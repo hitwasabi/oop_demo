@@ -6,6 +6,9 @@ public class Main {
         h.setName("Tu");
         h.setAge(22);
         h.setCity("Ha Noi");
-        System.out.println("Name:" + h.getName() + " Age: " + h.getAge() + " From: " + h.getCity());
+        h.setAddress("69 Tam Trinh");
+        // System.out.println("Name:" + h.getName() + " Age: " + h.getAge() + " From: " + h.getCity() + " Address: " + h.getAddress());
+        System.out.println(h.toString());
+
     }
 }

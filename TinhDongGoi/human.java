@@ -1,27 +1,46 @@
 package TinhDongGoi;
 
 public class human {
-    private String name, city;
+    //Public
+    public String city;
+    //Protected
+    protected String name;
+    // Default
+    String address;
+    //Private
     private int age;
     
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
     public String getCity() {
         return city;
     }
-    public void setCity(String city) {
+    public void setCity(final String city) {
         this.city = city;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(final String name) {
+        this.name = name;
+    }
+    public String getAddress() {
+        return address;
+    }
+    public void setAddress(final String address) {
+        this.address = address;
     }
     public int getAge() {
         return age;
     }
-    public void setAge(int age) {
+    public void setAge(final int age) {
         this.age = age;
-    } 
+    }
+    @Override
+    public String toString() {
+        return "human [city=" + city + ", name=" + name + ", address=" + address + ", age=" + age + "]";
+    }
+
+    
+    
 
     
     
